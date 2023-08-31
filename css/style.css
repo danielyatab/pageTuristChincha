@@ -9,6 +9,7 @@ body {
  margin: 0; 
  font-family: sans-serif;
  font-size: 16px;
+ overflow-x: hidden;
 }
 
 a {
@@ -21,10 +22,10 @@ header {
   height:9vh;
   position: sticky;
   top: 0;
+  left: 0;
 }
 
 body{
-  height: 200vh;
 }
 
 /* ***HEADER*** */
@@ -60,18 +61,107 @@ body{
 }
 
 /* ***MAIN*** */
-.title {
+
+/* ?Seccion Titulo */
+.title-central {
   display: grid;
   grid-template-columns: repeat(8, 1fr); 
-  grid-template-rows: 1;
+  gap: 0.2rem;
+  padding: 2rem;
+  align-items: center;
+  height: 92vh;
+}
+
+.title-h1 {
+  font-size: 4rem;
+  grid-column: span 4;
+  text-align: center;
+}
+.img-central {
+  grid-column: span 4; /* Usa grid-column en lugar de column-span */
+  text-align: center;
+}
+
+.img-central img{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 2px 2px 12px rgb(235, 130, 33);
+}
+
+/* Secciones */
+.seccion-container{
+  height: auto;
+}
+
+/* ?Seccion Turismo */
+
+
+.seccion-bg{
+  background-color: rgb(243, 136, 36);
+  text-align: center;
+}
+.seccion-bg h2{
+  color: white;
+  padding-top: 2rem;
+  font-size: 3.1rem;
+}
+
+.turismo-central{
+  display: grid;
+  grid-template-columns: repeat(4,300px);
+  grid-template-rows: repeat(2, 330px);
   justify-content: center;
+  gap: 2.1rem;
+  padding: 1.3rem;
+}
+
+
+/* Componente card */
+.card {
+  padding: 0.4rem;
+  text-align: center;
+  border-radius: 1.2rem;
+  background-color: white;
+}
+
+.card h3{
+  text-decoration: underline;
+}
+
+.card img{
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card p{
+  font-size: 0.9rem;
+  font-weight: bolder;
+  margin: 0.4rem;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   align-items: center;
 }
 
-.title-central {
-  font-size: 2.4rem;
-  grid-column: span 5 ; /* Usa grid-column en lugar de column-span */
+/* ?Seccion Gastronomia */
+
+.bubble{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.2rem;
+  padding: 2rem;
 }
-.img-central {
-  grid-column: span 3; /* Usa grid-column en lugar de column-span */
+.bubble img{
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1.4rem;
 }
