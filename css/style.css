@@ -165,3 +165,71 @@ body{
   object-fit: cover;
   border-radius: 1.4rem;
 }
+
+
+
+
+/* ?Seccion Comentarios */
+
+.comentarios-bg {
+  background-color: rgb(243, 136, 36);
+}
+.lista-comentarios{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+
+.child-comentario {
+  background-color: white;
+  border-radius: 2.4rem;
+}
+
+.child-comentario img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.9rem;
+}
+
+.bubble:nth-child(1) img {
+  order: 2;
+}
+
+.bubble:nth-child(1) .bubble-container {
+  order: 1;
+}
+
+
+.bubble:nth-child(3) img {
+  order: 2;
+}
+
+.bubble:nth-child(3) .bubble-container {
+  order: 1;
+}
+
+
+.bubble:nth-child(5) img {
+  order: 2;
+}
+
+.bubble:nth-child(5) .bubble-container {
+  order: 1;
+}
+
+
+
+
+.com-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
