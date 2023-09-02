@@ -151,6 +151,14 @@ body{
 }
 
 /* ?Seccion Gastronomia */
+.seccion-container {
+  padding: 1.2rem;
+}
+
+.seccion-container h2{
+  font-size: 4rem;
+  padding-left: 2rem;
+}
 
 .bubble{
   display: flex;
@@ -158,6 +166,7 @@ body{
   align-items: center;
   gap: 2.2rem;
   padding: 2rem;
+  font-size: 1.3rem;
 }
 .bubble img{
   width: 600px;
@@ -167,12 +176,19 @@ body{
 }
 
 
-
-
 /* ?Seccion Comentarios */
 
 .comentarios-bg {
   background-color: rgb(243, 136, 36);
+  padding-top: 2rem;
+}
+
+.comentarios-bg h2{
+  padding: 0 0.8rem;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
 }
 .lista-comentarios{
   padding: 2rem;
