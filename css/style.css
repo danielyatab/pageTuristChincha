@@ -25,8 +25,6 @@ header {
   left: 0;
 }
 
-body{
-}
 
 /* ***HEADER*** */
 .flex-list {
@@ -77,6 +75,11 @@ body{
   grid-column: span 4;
   text-align: center;
 }
+
+.title-description{
+  font-size: 1.4rem;
+}
+
 .img-central {
   grid-column: span 4; /* Usa grid-column en lugar de column-span */
   text-align: center;
@@ -176,41 +179,6 @@ body{
 }
 
 
-/* ?Seccion Comentarios */
-
-.comentarios-bg {
-  background-color: rgb(243, 136, 36);
-  padding-top: 2rem;
-}
-
-.comentarios-bg h2{
-  padding: 0 0.8rem;
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-  text-decoration: underline;
-}
-.lista-comentarios{
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 3rem;
-}
-
-
-.child-comentario {
-  background-color: white;
-  border-radius: 2.4rem;
-}
-
-.child-comentario img{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 0.9rem;
-}
 
 .bubble:nth-child(1) img {
   order: 2;
@@ -239,13 +207,53 @@ body{
 }
 
 
+/* ?Seccion  Alojamientos*/
+
+.alojamientos-bg {
+  background-color: rgb(243, 136, 36);
+  padding-top: 2rem;
+}
+
+.alojamientos-bg h2{
+  padding: 0 0.8rem;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+.lista-alojamientos{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.8rem;
+}
+
+
+.child-alojamiento {
+  background-color: white;
+  border-radius: 2.4rem;
+  width: 280px;
+  height: 300px;
+  padding: 1rem;
+}
+
+.child-alojamiento img{
+  width: 250px;
+  height: 200px;
+  border-radius: 2.4rem;
+  object-fit: cover;
+}
 
 
 .com-flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
   font-size: 0.9rem;
+}
+.com-flex p{
+  font-size: 1.5rem;
+  font-weight: bold;
 }
